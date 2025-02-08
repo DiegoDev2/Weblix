@@ -2,7 +2,7 @@ import React from "react";
 import { portafolios } from "@/const/portafolios";
 import Image from "next/image";
 import Link from "next/link";
-import { BookmarkIcon } from "@heroicons/react/24/outline";
+
 
 const Portfolios = () => {
   return (
@@ -33,9 +33,6 @@ const Portfolios = () => {
             <p className="text-gray-500 text-sm mt-1">{portfolio.description}</p>
 
 
-            <div className="absolute top-4 right-4 opacity-60 hover:opacity-100 cursor-pointer">
-              <BookmarkIcon className="w-5 h-5 text-white" />
-            </div>
           </div>
         </div>
       ))}

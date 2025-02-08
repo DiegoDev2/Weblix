@@ -3,6 +3,7 @@ import Header from "@/components/Header";
 import Entry from "@/components/Entry";
 import PortafoliosCard from "@/components/Card";
 
+import Footer from "@/components/Footer";
 
 
 export default function Home() {
@@ -13,6 +14,7 @@ export default function Home() {
        <Entry />
        <CategoryFilter />
        <PortafoliosCard />
+       <Footer />
 
     </>
    
