@@ -1,5 +1,5 @@
 import React from "react";
-import { portafolios } from "@/const/portafolios";
+import { website } from "@/const/website";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -7,7 +7,7 @@ import Link from "next/link";
 const Portfolios = () => {
   return (
     <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-6  text-white">
-      {portafolios.map((portfolio) => (
+      {website.map((portfolio) => (
         <div
           key={portfolio.id}
           className="relative bg-[#111] rounded-lg overflow-hidden group transition-transform duration-300 hover:scale-[1.02] border border-neutral-800"

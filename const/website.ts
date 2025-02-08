@@ -1,4 +1,4 @@
-export const portafolios = [
+export const website = [
     {
         id: 1,
         title: "Portfolio DiegoDev",
