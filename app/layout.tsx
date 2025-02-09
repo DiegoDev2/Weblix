@@ -11,6 +11,20 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Weblix",
   description: "A collection of beautiful websites. ✨🚀 ",
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://portlix.vercel.app",
+  
+    images: [
+      {
+        url: "https://portlix.vercel.app/og.png",
+        width: 1200,
+        height: 630,
+        alt: "Weblix",
+      },
+    ],
+  },
 };
 
 export default function RootLayout({
