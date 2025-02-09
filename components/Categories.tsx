@@ -1,6 +1,4 @@
 "use client";
-
-import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
 const categories = ["All", "Company", "Personal", "3D", "Minimal"];
