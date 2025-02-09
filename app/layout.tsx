@@ -34,6 +34,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <link rel="icon" type="image/ico" href="/favicon.png" />
+      </head>
       <body
         className={`${poppins.className} antialiased ` }
       >
