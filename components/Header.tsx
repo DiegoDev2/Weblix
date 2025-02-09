@@ -6,15 +6,15 @@ const Header = () => {
 
       <div className="flex items-center space-x-2">
         <div className="w-6 h-6 bg-lime-200 rounded-sm"></div>
-        <span className="text-lg font-semibold">Weblix</span>
+        <span className="text-lg font-semibold">Collweb</span>
       </div>
 
 
       <nav className="hidden md:flex space-x-6">
 
         <Link href="#" className="text-gray-400 hover:text-white">Templates</Link>
-        <Link href="#" className="text-gray-400 hover:text-white">Github</Link>
-        <Link href="#" className="text-gray-400 hover:text-white">X</Link>
+        <Link target="_blank" href="https://github.com/DiegoDev2/webport" className="text-gray-400 hover:text-white">Github</Link>
+        <Link target="_blank" href="https://x.com/dxb_0x" className="text-gray-400 hover:text-white">X</Link>
       </nav>
 
 

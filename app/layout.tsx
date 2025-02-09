@@ -9,19 +9,19 @@ const poppins = Poppins({
   display: "swap",
 });
 export const metadata: Metadata = {
-  title: "Weblix",
+  title: "Collweb",
   description: "A collection of beautiful websites. ✨🚀 ",
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://portlix.vercel.app",
+    url: "https://collweb.vercel.app",
   
     images: [
       {
-        url: "https://portlix.vercel.app/og.png",
+        url: "https://collweb.vercel.app/og.png",
         width: 1200,
         height: 630,
-        alt: "Weblix",
+        alt: "collweb",
       },
     ],
   },

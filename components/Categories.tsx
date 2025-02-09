@@ -3,26 +3,18 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 
-const categories = [
-  "All", "Worker", "Personal", "3D", "Minimal"
-];
+const categories = ["All", "Company", "Personal", "3D", "Minimal"];
 
-const CategoryFilter = () => {
-  const [activeCategory, setActiveCategory] = useState<string | null>(null);
-
-  useEffect(() => {
-    setActiveCategory("All");
-  }, []);
-
-  if (activeCategory === null) return null;
-
+const CategoryFilter = ({ activeCategory, setActiveCategory }: { activeCategory: string; setActiveCategory: (category: string) => void }) => {
   return (
     <div className="relative text-white py-3 px-6 flex items-center space-x-4 overflow-x-auto">
       {categories.map((category) => (
         <button
           key={category}
           onClick={() => setActiveCategory(category)}
-          className="relative px-4 py-2 rounded-lg transition text-gray-300 hover:text-white font-medium text-sm"
+          className={`relative px-4 py-2 rounded-lg transition text-gray-300 hover:text-white font-medium text-sm ${
+            activeCategory === category ? "text-white" : ""
+          }`}
         >
           {category}
           {activeCategory === category && (
